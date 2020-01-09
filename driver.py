@@ -1,15 +1,33 @@
+import argparse
+from datetime import datetime 
+import sys 
 from util.calendar_grapher import plot_calendar_year
 from util.io import read_csv
+from util.io import write_graph
 
 # Argument Parsing
 parser = argparse.ArgumentParser(description='A script to track daily habits')
-parser.add_argument('-w', "--write_habit",
+parser.add_argument('-g', "--graph_habit",
     help="The name of the habit")
 args = parser.parse_args()
 
-# Read from log
-full_moon_day = [2, 2, 2, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22]
-full_moon_month = [1, 1, 3, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+current_date = datetime.now()
+year = current_date.year
+filename = str(year) + "-" + args.graph_habit
+csv_file = filename + ".csv"
 
-# Generate plot
-plot_calendar_year(full_moon_day, full_moon_month)
+# Read from log
+dates = read_csv(csv_file)
+
+if len(dates) != 2:
+    print ("Unable to read csv")
+    sys.exit()
+days = dates[0]
+months = dates[1]
+
+plt = plot_calendar_year(days, months)
+plt.title(args.graph_habit + " in " + str(year))
+
+graph_file = filename + ".png"
+
+write_graph(plt, graph_file)

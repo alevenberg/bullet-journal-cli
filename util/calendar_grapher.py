@@ -3,23 +3,6 @@ import numpy as np
 from matplotlib.patches import Rectangle
 import matplotlib.pyplot as plt
 
-
-# def plot_calendar(year, dates):
-#     plt.title('Calendar' + year)
-#     plt.savefig('./graph/calendar.png')
-
-# def plot_calendar_year(dates):
-#     """ 
-#     Plots the specific dates
-
-#     Args: 
-#         dates (list of date time objects) 
-
-#     Returns:
-#         the generated plot without a title
-#     """
-#     plot_calendar_year = plot_calendar_year# split 
-
 def plot_calendar_year(days, months):
     """
     Plots the whole year with specified days as blue
