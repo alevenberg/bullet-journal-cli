@@ -22,6 +22,6 @@ To generate a graph, run `python3 driver.py -g HABIT`
 ```
 
 ## Todo 
-- [] Generate a calendar for each month 
-- [] Pick color for the generated calendar
-- [] Handle already written lines
+- [ ] Generate a calendar for each month 
+- [ ] Pick color for the generated calendar
+- [ ] Handle already written lines
