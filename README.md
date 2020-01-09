@@ -21,7 +21,7 @@ To generate a graph, run `python3 driver.py -g HABIT`
     └── 2020-running.csv
 ```
 
-# Todo 
-[ ] Generate a calendar for each month 
-[ ] Pick color for the generated calendar
-[ ] Handle already written lines
+## Todo 
+[] Generate a calendar for each month 
+[] Pick color for the generated calendar
+[] Handle already written lines
