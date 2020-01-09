@@ -1,5 +1,12 @@
 # bullet-journal-cli
 
+This is a simple python script to log and track habits over a year
+
+## How to use
+
+To log a habit for a given day, run `python3 log.py -w HABIT`
+
+To generate a graph, run `python3 driver.py -g HABIT`
 
 ## File structure
 ```
@@ -15,10 +22,6 @@
 ```
 
 # Todo 
-[ ] Make a calendar per month 
-[ ] Pick color for calendar
-[ ] Add file structure
-[ ] Write sample commands to run 
-    - python3 log.py -w running
-    - python3 driver.py -g running
+[ ] Generate a calendar for each month 
+[ ] Pick color for the generated calendar
 [ ] Handle already written lines
