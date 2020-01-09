@@ -2,6 +2,7 @@
 
 
 # File structure
+```
 ├── README.md
 ├── calendar_grapher.py ------------> holds utility function to generate the matplotlib graph
 ├── driver.py ----------------------> reads the csv and saves the generated graph in ./graphs
@@ -11,6 +12,8 @@
 ├── log.py
 └── logs
     └── 2020-running.csv
+```
+
 # Todo 
 [ ] Make a calendar per month 
 [ ] Pick color for calendar
