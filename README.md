@@ -8,6 +8,12 @@ To log a habit for a given day, run `python3 log.py -w HABIT`
 
 To generate a graph, run `python3 driver.py -g HABIT`
 
+## Example
+
+A sample example would be tracking the habit "running". By running the command `python3 log.py -w running`, the file `./logs/2020-running.csv` would be generated. To graph, use the command `python3 driver.py -g running` and the file `./graphs/2020-running.png` would be generated.
+
+![Running graph](./graphs/2020-running.png)
+
 ## File structure
 ```
 ├── README.md
