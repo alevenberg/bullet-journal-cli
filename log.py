@@ -1,7 +1,7 @@
 import argparse
 import datetime
 from datetime import datetime
-from util.io import write_csv
+from io_generator import write_csv
 
 parser = argparse.ArgumentParser(description='A script to track daily habits')
 parser.add_argument('-w', "--write_habit",

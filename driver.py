@@ -1,9 +1,9 @@
 import argparse
 from datetime import datetime 
 import sys 
-from util.calendar_grapher import plot_calendar_year
-from util.io import read_csv
-from util.io import write_graph
+from calendar_grapher import plot_calendar_year
+from io_generator import read_csv
+from io_generator import write_graph
 
 # Argument Parsing
 parser = argparse.ArgumentParser(description='A script to track daily habits')
