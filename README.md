@@ -1,16 +1,16 @@
 # bullet-journal-cli
 
 
-# File structure
+## File structure
 ```
 ├── README.md
 ├── calendar_grapher.py ------------> holds utility function to generate the matplotlib graph
 ├── driver.py ----------------------> reads the csv and saves the generated graph in ./graphs
 ├── graphs -------------------------> stores generated graphs
 │   └── 2020-running.png
-├── io_generator.py
-├── log.py
-└── logs
+├── io_generator.py ----------------> holds utility functions to write/read csv and graph files
+├── log.py -------------------------> adds line to log files
+└── logs ---------------------------> stores logs
     └── 2020-running.csv
 ```
 
