@@ -27,7 +27,7 @@ A sample example would be tracking the habit "running". By running the command `
     └── 2020-running.csv
 ```
 
-## Todo 
+## Future work 
 - [ ] Generate a calendar for each month 
 - [ ] Pick color for the generated calendar
 - [ ] Handle already written lines
